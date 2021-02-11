@@ -8,9 +8,9 @@ namespace Strategy.Domain.Models
 {
     public class Unit
     {
-        public Unit()
+        public Unit(Player player)
         {
-           
+            Player = player;
         }
         /// <summary>
         /// Координата x 
@@ -25,6 +25,7 @@ namespace Strategy.Domain.Models
         /// <summary>
         /// Игрок, который управляет юнитом.
         /// </summary>
-        
+        public Player Player { get; }
+
     }
 }

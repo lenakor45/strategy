@@ -6,16 +6,10 @@
     public sealed class Archer :Unit
     {
         /// <inheritdoc />
-        public Archer(Player player)
+        public Archer(Player player) : base(player)
         {
-            Player = player;
+           
         }
 
-
-
-        /// <summary>
-        /// Игрок, который управляет юнитом.
-        /// </summary>
-        public Player Player { get; }
     }
 }

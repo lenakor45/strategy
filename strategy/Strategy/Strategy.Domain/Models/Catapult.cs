@@ -6,15 +6,10 @@
     public sealed class Catapult :Unit
     {
         /// <inheritdoc />
-        public Catapult(Player player)
+        public Catapult(Player player):base(player)
         {
-            Player = player;
+           
         }
 
-
-        /// <summary>
-        /// Игрок, который управляет юнитом.
-        /// </summary>
-        public Player Player { get; }
     }
 }

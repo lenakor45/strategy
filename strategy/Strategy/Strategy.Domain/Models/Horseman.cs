@@ -6,14 +6,15 @@
     public sealed class Horseman :Unit
     {
         /// <inheritdoc />
-        public Horseman(Player player)
+        public Horseman(Player player) :base(player)
+            
         {
-            Player = player;
+            
         }
 
         /// <summary>
         /// Игрок, который управляет юнитом.
         /// </summary>
-        public Player Player { get; }
+        
     }
 }

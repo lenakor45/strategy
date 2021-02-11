@@ -5,15 +5,12 @@
     /// </summary>
     public sealed class Swordsman :Unit
     {
-        public Swordsman(Player player)
+        public Swordsman(Player player):base(player)
         {
-            Player = player;
+            
         }
 
 
-        /// <summary>
-        /// Игрок, который управляет юнитом.
-        /// </summary>
-        public Player Player { get; }
+        
     }
 }
