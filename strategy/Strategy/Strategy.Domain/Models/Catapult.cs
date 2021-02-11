@@ -6,7 +6,7 @@
     public sealed class Catapult :Unit
     {
         /// <inheritdoc />
-        public Catapult(Player player):base(player)
+        public Catapult(Player player, int hp = 75):base(player, hp)
         {
            
         }

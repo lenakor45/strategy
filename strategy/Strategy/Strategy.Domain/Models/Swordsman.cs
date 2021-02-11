@@ -5,7 +5,7 @@
     /// </summary>
     public sealed class Swordsman :Unit
     {
-        public Swordsman(Player player):base(player)
+        public Swordsman(Player player, int hp = 100):base(player, hp)
         {
             
         }

@@ -6,7 +6,7 @@
     public sealed class Archer :Unit
     {
         /// <inheritdoc />
-        public Archer(Player player) : base(player)
+        public Archer(Player player, int hp = 50) : base(player, hp)
         {
            
         }

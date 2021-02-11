@@ -8,10 +8,12 @@ namespace Strategy.Domain.Models
 {
     public class Unit
     {
-        public Unit(Player player)
+        public Unit(Player player, int hp)
         {
             Player = player;
+            Hp = hp;
         }
+
         /// <summary>
         /// Координата x 
         /// </summary>
@@ -27,5 +29,9 @@ namespace Strategy.Domain.Models
         /// </summary>
         public Player Player { get; }
 
+        /// <summary>
+        /// Уровень здоровья юнита.
+        /// </summary>
+        public int Hp { get; set; }
     }
 }
