@@ -38,34 +38,14 @@ namespace Strategy.Domain
         /// <returns>Координата x, координата y.</returns>
         public Coordinates GetObjectCoordinates(object o)
         {
-            if (o is Archer a)
+            if (o is Unit u)
             {
-                return new Coordinates(a.X, a.Y);
+                return new Coordinates(u.X, u.Y);
             }
 
-            if (o is Catapult c)
-            {
-                return new Coordinates(c.X, c.Y);
-            }
-
-            if (o is Horseman h)
-            {
-                return new Coordinates(h.X, h.Y);
-            }
-
-            if (o is Swordsman s)
-            {
-                return new Coordinates(s.X, s.Y);
-            }
-
-            if (o is Grass g)
+            if (o is Ground g)
             {
                 return new Coordinates(g.X, g.Y);
-            }
-
-            if (o is Water w)
-            {
-                return new Coordinates(w.X, w.Y);
             }
 
             throw new ArgumentException("Неизвестный тип");

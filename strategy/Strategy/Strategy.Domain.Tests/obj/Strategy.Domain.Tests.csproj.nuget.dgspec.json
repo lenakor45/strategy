@@ -1,21 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Леночка\\Desktop\\Strategy\\strategy\\Strategy\\Strategy.Domain.Tests\\Strategy.Domain.Tests.csproj": {}
+    "E:\\ОГУ\\ООЯ и С\\Git\\strategy\\strategy\\Strategy\\Strategy.Domain.Tests\\Strategy.Domain.Tests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Леночка\\Desktop\\Strategy\\strategy\\Strategy\\Strategy.Domain.Tests\\Strategy.Domain.Tests.csproj": {
+    "E:\\ОГУ\\ООЯ и С\\Git\\strategy\\strategy\\Strategy\\Strategy.Domain.Tests\\Strategy.Domain.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Леночка\\Desktop\\Strategy\\strategy\\Strategy\\Strategy.Domain.Tests\\Strategy.Domain.Tests.csproj",
+        "projectUniqueName": "E:\\ОГУ\\ООЯ и С\\Git\\strategy\\strategy\\Strategy\\Strategy.Domain.Tests\\Strategy.Domain.Tests.csproj",
         "projectName": "Strategy.Domain.Tests",
-        "projectPath": "C:\\Users\\Леночка\\Desktop\\Strategy\\strategy\\Strategy\\Strategy.Domain.Tests\\Strategy.Domain.Tests.csproj",
-        "packagesPath": "C:\\Users\\Леночка\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Леночка\\Desktop\\Strategy\\strategy\\Strategy\\Strategy.Domain.Tests\\obj\\",
+        "projectPath": "E:\\ОГУ\\ООЯ и С\\Git\\strategy\\strategy\\Strategy\\Strategy.Domain.Tests\\Strategy.Domain.Tests.csproj",
+        "packagesPath": "C:\\Users\\chern\\.nuget\\packages\\",
+        "outputPath": "E:\\ОГУ\\ООЯ и С\\Git\\strategy\\strategy\\Strategy\\Strategy.Domain.Tests\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "configFilePaths": [
-          "C:\\Users\\Леночка\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\chern\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,8 +28,8 @@
         "frameworks": {
           "net461": {
             "projectReferences": {
-              "C:\\Users\\Леночка\\Desktop\\Strategy\\strategy\\Strategy\\Strategy.Domain\\Strategy.Domain.csproj": {
-                "projectPath": "C:\\Users\\Леночка\\Desktop\\Strategy\\strategy\\Strategy\\Strategy.Domain\\Strategy.Domain.csproj"
+              "E:\\ОГУ\\ООЯ и С\\Git\\strategy\\strategy\\Strategy\\Strategy.Domain\\Strategy.Domain.csproj": {
+                "projectPath": "E:\\ОГУ\\ООЯ и С\\Git\\strategy\\strategy\\Strategy\\Strategy.Domain\\Strategy.Domain.csproj"
               }
             }
           }
@@ -61,11 +61,11 @@
         }
       }
     },
-    "C:\\Users\\Леночка\\Desktop\\Strategy\\strategy\\Strategy\\Strategy.Domain\\Strategy.Domain.csproj": {
+    "E:\\ОГУ\\ООЯ и С\\Git\\strategy\\strategy\\Strategy\\Strategy.Domain\\Strategy.Domain.csproj": {
       "restore": {
-        "projectUniqueName": "C:\\Users\\Леночка\\Desktop\\Strategy\\strategy\\Strategy\\Strategy.Domain\\Strategy.Domain.csproj",
+        "projectUniqueName": "E:\\ОГУ\\ООЯ и С\\Git\\strategy\\strategy\\Strategy\\Strategy.Domain\\Strategy.Domain.csproj",
         "projectName": "Strategy.Domain",
-        "projectPath": "C:\\Users\\Леночка\\Desktop\\Strategy\\strategy\\Strategy\\Strategy.Domain\\Strategy.Domain.csproj"
+        "projectPath": "E:\\ОГУ\\ООЯ и С\\Git\\strategy\\strategy\\Strategy\\Strategy.Domain\\Strategy.Domain.csproj"
       },
       "frameworks": {
         "net461": {}

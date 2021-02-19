@@ -8,7 +8,7 @@
         /// <inheritdoc />
         public Archer(Player player, int hp = 50) : base(player, hp)
         {
-           
+          
         }
 
     }

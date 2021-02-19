@@ -15,3 +15,9 @@ C:\Users\Леночка\Desktop\Strategy\strategy\Strategy\Strategy.Domain\obj\D
 C:\Users\Леночка\Desktop\Strategy\strategy\Strategy\Strategy.Domain\obj\Debug\Strategy.Domain.csproj.CoreCompileInputs.cache
 C:\Users\Леночка\Desktop\Strategy\strategy\Strategy\Strategy.Domain\obj\Debug\Strategy.Domain.dll
 C:\Users\Леночка\Desktop\Strategy\strategy\Strategy\Strategy.Domain\obj\Debug\Strategy.Domain.pdb
+E:\ОГУ\ООЯ и С\Git\strategy\strategy\Strategy\Strategy.Domain\obj\Debug\Strategy.Domain.csprojAssemblyReference.cache
+E:\ОГУ\ООЯ и С\Git\strategy\strategy\Strategy\Strategy.Domain\obj\Debug\Strategy.Domain.csproj.CoreCompileInputs.cache
+E:\ОГУ\ООЯ и С\Git\strategy\strategy\Strategy\Strategy.Domain\obj\Debug\Strategy.Domain.dll
+E:\ОГУ\ООЯ и С\Git\strategy\strategy\Strategy\Strategy.Domain\obj\Debug\Strategy.Domain.pdb
+E:\ОГУ\ООЯ и С\Git\strategy\strategy\Strategy\Strategy.Domain\bin\Debug\Strategy.Domain.dll
+E:\ОГУ\ООЯ и С\Git\strategy\strategy\Strategy\Strategy.Domain\bin\Debug\Strategy.Domain.pdb
