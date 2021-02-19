@@ -61,31 +61,16 @@ namespace Strategy.Domain
         /// <see langvalue="true" />, если юнит может переместиться
         /// <see langvalue="false" /> - иначе.
         /// </returns>
-        public bool CanMoveUnit(object u, int x, int y)
+        public bool CanMoveUnit(object obj, int x, int y)
         {
-            if (u is Archer a)
+            if (obj is Unit selectedUnit)
             {
-                if (Math.Abs(a.X - x) > 3 || Math.Abs(a.Y - y) > 3)
+                if (Math.Abs(selectedUnit.X - x) > selectedUnit.Step || Math.Abs(selectedUnit.Y - y) > selectedUnit.Step)
                     return false;
             }
-            else if (u is Catapult c)
-            {
-                if (Math.Abs(c.X - x) > 1 || Math.Abs(c.Y - y) > 1)
-                    return false;
-            }
-            else if (u is Horseman h)
-            {
-                if (Math.Abs(h.X - x) > 10 || Math.Abs(h.Y - y) > 10)
-                    return false;
-            }
-            else if (u is Swordsman s)
-            {
-                if (Math.Abs(s.X - x) > 5 || Math.Abs(s.Y - y) > 5)
-                    return false;
-            }
+            
             else
                 throw new ArgumentException("Неизвестный тип");
-
 
             foreach (object g in _map.Ground)
             {
@@ -95,30 +80,15 @@ namespace Strategy.Domain
                 }
             }
 
-            foreach (object u1 in _map.Units)
+            foreach (object unit in _map.Units)
             {
-                if (u1 is Archer a1)
+                if (unit is Unit un1)
                 {
-                    if (a1.X == x && a1.Y == y)
-                        return false;
-                }
-                else if (u1 is Catapult c1)
-                {
-                    if (c1.X == x && c1.Y == y)
-                        return false;
-                }
-                else if (u1 is Horseman h1)
-                {
-                    if (h1.X == x && h1.Y == y)
-                        return false;
-                }
-                else if (u1 is Swordsman s1)
-                {
-                    if (s1.X == x && s1.Y == y)
+                    if (un1.X == x && un1.Y == y)
                         return false;
                 }
                 else
-                    throw new ArgumentException("Неизвестный тип");
+                throw new ArgumentException("Неизвестный тип");
             }
 
             return true;
@@ -130,31 +100,17 @@ namespace Strategy.Domain
         /// <param name="u">Юнит.</param>
         /// <param name="x">Координата X клетки.</param>
         /// <param name="y">Координата Y клетки.</param>
-        public void MoveUnit(object u, int x, int y)
+        public void MoveUnit(object obj, int x, int y)
         {
-            if (!CanMoveUnit(u, x, y))
+            if (!CanMoveUnit(obj, x, y))
                 return;
 
-            if (u is Archer a)
+            if (obj is Unit unit)
             {
-                a.X = x;
-                a.Y = y;
+                unit.X = x;
+                unit.Y = y;
             }
-            else if (u is Catapult c)
-            {
-                c.X = x;
-                c.Y = y;
-            }
-            else if (u is Horseman h)
-            {
-                h.X = x;
-                h.Y = y;
-            }
-            else if (u is Swordsman s)
-            {
-                s.X = x;
-                s.Y = y;
-            }
+
             else
                 throw new ArgumentException("Неизвестный тип");
         }
@@ -172,21 +128,9 @@ namespace Strategy.Domain
         {
             var cr = GetObjectCoordinates(tu);
             Player ptu;
-            if (tu is Archer a)
+            if (tu is Unit unit)
             {
-                ptu = a.Player;
-            }
-            else if (tu is Catapult c)
-            {
-                ptu = c.Player;
-            }
-            else if (tu is Horseman h)
-            {
-                ptu = h.Player;
-            }
-            else if (tu is Swordsman s)
-            {
-                ptu = s.Player;
+                ptu = unit.Player;
             }
             else
                 throw new ArgumentException("Неизвестный тип");
@@ -194,50 +138,15 @@ namespace Strategy.Domain
             if (IsDead(tu))
                 return false;
 
-            if (au is Archer a1)
+            if (au is Unit atUnit)
             {
-                if (a1.Player == ptu)
+                if (atUnit.Player == ptu)
                     return false;
 
-                var dx = a1.X - cr.X;
-                var dy = a1.Y - cr.Y;
+                var dx = atUnit.X - cr.X;
+                var dy = atUnit.Y - cr.Y;
 
-                return dx >= -5 && dx <= 5 && dy >= -5 && dy <= 5;
-            }
-
-            if (au is Catapult c1)
-            {
-                if (c1.Player == ptu)
-                    return false;
-
-                var dx = c1.X - cr.X;
-                var dy = c1.Y - cr.Y;
-
-                return dx >= -10 && dx <= 10 && dy >= -10 && dy <= 10;
-            }
-
-            if (au is Horseman h1)
-            {
-                if (h1.Player == ptu)
-                    return false;
-
-                var dx = h1.X - cr.X;
-                var dy = h1.Y - cr.Y;
-
-                return (dx == -1 || dx == 0 || dx == 1) &&
-                       (dy == -1 || dy == 0 || dy == 1);
-            }
-
-            if (au is Swordsman s1)
-            {
-                if (s1.Player == ptu)
-                    return false;
-
-                var dx = s1.X - cr.X;
-                var dy = s1.Y - cr.Y;
-
-                return (dx == -1 || dx == 0 || dx == 1) &&
-                       (dy == -1 || dy == 0 || dy == 1);
+                return dx >= -(atUnit.Attac) && dx <= atUnit.Attac && dy >= -(atUnit.Attac) && dy <= atUnit.Attac;
             }
 
             throw new ArgumentException("Неизвестный тип");
@@ -256,42 +165,25 @@ namespace Strategy.Domain
             InitializeUnitHp(tu);
             var thp = _hp[tu];
             var cr = GetObjectCoordinates(tu);
-            int d = 0;
+            int d;
 
-            if (au is Archer a)
+            if (au is Unit unit)
             {
-                d = 50;
-
-                var dx = a.X - cr.X;
-                var dy = a.Y - cr.Y;
-
-                if ((dx == -1 || dx == 0 || dx == 1) &&
-                    (dy == -1 || dy == 0 || dy == 1))
+                d = unit.Damage;
+                if (unit.Attac > 1)
                 {
-                    d /= 2;
+                    
+                    var dx = unit.X - cr.X;
+                    var dy = unit.Y - cr.Y;
+
+                    if ((dx == -1 || dx == 0 || dx == 1) &&
+                        (dy == -1 || dy == 0 || dy == 1))
+                    {
+                        d /= 2;
+                    }
                 }
             }
-            else if (au is Catapult c)
-            {
-                d = 100;
-
-                var dx = c.X - cr.X;
-                var dy = c.Y - cr.Y;
-
-                if ((dx == -1 || dx == 0 || dx == 1) &&
-                    (dy == -1 || dy == 0 || dy == 1))
-                {
-                    d /= 2;
-                }
-            }
-            else if (au is Horseman)
-            {
-                d = 75;
-            }
-            else if (au is Swordsman)
-            {
-                d = 50;
-            }
+            
             else
                 throw new ArgumentException("Неизвестный тип");
 

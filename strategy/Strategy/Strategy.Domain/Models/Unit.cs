@@ -8,10 +8,13 @@ namespace Strategy.Domain.Models
 {
     public class Unit
     {
-        public Unit(Player player, int hp)
+        public Unit(Player player, int hp, int step, int attac, int damage)
         {
             Player = player;
             Hp = hp;
+            Step = step;
+            Attac = attac;
+            Damage = damage;
         }
 
         /// <summary>
@@ -33,5 +36,18 @@ namespace Strategy.Domain.Models
         /// Уровень здоровья юнита.
         /// </summary>
         public int Hp { get; set; }
+        /// <summary>
+        /// Шаг юнита.
+        /// </summary>
+        public int Step { get; set; }
+        /// <summary>
+        /// Дальность атаки юнита.
+        /// </summary>
+        public int Attac { get; set; }
+        /// <summary>
+        /// Размер наносимого юнитом урона.
+        /// </summary>
+        public int Damage { get; set; }
+        
     }
 }
