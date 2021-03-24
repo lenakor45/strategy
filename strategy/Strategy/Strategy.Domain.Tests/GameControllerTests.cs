@@ -23,36 +23,36 @@ namespace Strategy.Domain.Tests
             var gameController = new GameController(map);
 
 
-            var archer = new Archer(player) { X = 1, Y = 2 };
-            var archerCoordinates = gameController.GetObjectCoordinates(archer);
-            Assert.AreEqual(1, archerCoordinates.X);
-            Assert.AreEqual(2, archerCoordinates.Y);
+            Unit archer = new Archer(player) { X = 1, Y = 2 };
+            
+            Assert.AreEqual(1, archer.X);
+            Assert.AreEqual(2, archer.Y);
 
-            var catapult = new Catapult(player) { X = 3, Y = 4 };
-            var catapultCoordinates = gameController.GetObjectCoordinates(catapult);
-            Assert.AreEqual(3, catapultCoordinates.X);
-            Assert.AreEqual(4, catapultCoordinates.Y);
+            Unit catapult = new Catapult(player) { X = 3, Y = 4 };
+            
+            Assert.AreEqual(3, catapult.X);
+            Assert.AreEqual(4, catapult.Y);
 
-            var horseman = new Horseman(player) { X = 5, Y = 6 };
-            var horsemanCoordinates = gameController.GetObjectCoordinates(horseman);
-            Assert.AreEqual(5, horsemanCoordinates.X);
-            Assert.AreEqual(6, horsemanCoordinates.Y);
+            Unit horseman = new Horseman(player) { X = 5, Y = 6 };
+            
+            Assert.AreEqual(5, horseman.X);
+            Assert.AreEqual(6, horseman.Y);
 
-            var swordsman = new Swordsman(player) { X = 7, Y = 8 };
-            var swordsmanCoordinates = gameController.GetObjectCoordinates(swordsman);
-            Assert.AreEqual(7, swordsmanCoordinates.X);
-            Assert.AreEqual(8, swordsmanCoordinates.Y);
+            Unit swordsman = new Swordsman(player) { X = 7, Y = 8 };
+            
+            Assert.AreEqual(7, swordsman.X);
+            Assert.AreEqual(8, swordsman.Y);
 
 
-            var grass = new Grass { X = 9, Y = 10 };
-            var grassCoordinates = gameController.GetObjectCoordinates(grass);
-            Assert.AreEqual(9, grassCoordinates.X);
-            Assert.AreEqual(10, grassCoordinates.Y);
+            MapElement grass = new Grass { X = 9, Y = 10 };
+           
+            Assert.AreEqual(9, grass.X);
+            Assert.AreEqual(10, grass.Y);
 
-            var water = new Water { X = 11, Y = 12 };
-            var waterCoordinates = gameController.GetObjectCoordinates(water);
-            Assert.AreEqual(11, waterCoordinates.X);
-            Assert.AreEqual(12, waterCoordinates.Y);
+            MapElement water = new Water { X = 11, Y = 12 };
+            
+            Assert.AreEqual(11, water.X);
+            Assert.AreEqual(12, water.Y);
         }
 
         #endregion
@@ -578,7 +578,7 @@ namespace Strategy.Domain.Tests
         /// Проверка не точная. Считается какое количество ударов нужно, чтобы убить противника.
         /// Смерть считается по тому, что больше нельзя атаковать. В общем случае, такая проверка работоспособна.
         /// </remarks>
-        private static int GetAttacksCount(GameController gameController, object attackerUnit, object targetUnit)
+        private static int GetAttacksCount(GameController gameController, Unit attackerUnit, Unit targetUnit)
         {
             var count = 0;
             while (gameController.CanAttackUnit(attackerUnit, targetUnit))

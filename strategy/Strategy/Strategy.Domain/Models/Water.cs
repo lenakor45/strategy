@@ -6,7 +6,7 @@
     public sealed class Water :Ground
     {
         /// <inheritdoc />
-        public Water()
+        public Water(string name = "Water") : base(name)
         {
         }
 

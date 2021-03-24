@@ -6,27 +6,20 @@ using System.Threading.Tasks;
 
 namespace Strategy.Domain.Models
 {
-    public class Unit
+    abstract public class Unit :MapElement
     {
-        public Unit(Player player, int hp, int step, int attac, int damage)
+        public Unit(Player player, int hp, int step, int attac, int damage, string name, bool isChangeDamage)
         {
             Player = player;
             Hp = hp;
             Step = step;
             Attac = attac;
             Damage = damage;
+            Name = name;
+            IsDamageChange = isChangeDamage;
         }
 
-        /// <summary>
-        /// Координата x 
-        /// </summary>
-        public int X { get; set; }
-
-        /// <summary>
-        /// Координата y 
-        /// </summary>
-        public int Y { get; set; }
-
+        
         /// <summary>
         /// Игрок, который управляет юнитом.
         /// </summary>
@@ -48,6 +41,37 @@ namespace Strategy.Domain.Models
         /// Размер наносимого юнитом урона.
         /// </summary>
         public int Damage { get; set; }
+        /// <summary>
+        /// изменяется ли урон.
+        /// </summary>
+        public bool IsDamageChange = true;
+
+        public static bool IsDead (Unit selectedUnit)
+        {
+            if(selectedUnit.Hp == 0)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
         
+        public static int ChangeDamageLevel (Unit attackUnit, Unit targetUnit)
+        {
+            if (attackUnit.IsDamageChange)
+            {
+                var dx = Math.Abs(attackUnit.X - targetUnit.X);
+                var dy = Math.Abs(attackUnit.Y - targetUnit.Y);
+
+                if ((dx == 0 || dx == 1) && (dy == 0 || dy == 1))
+                    return attackUnit.Damage / 2;
+                else
+                    return attackUnit.Damage;
+            }
+            else
+                return attackUnit.Damage;
+        }
     }
 }

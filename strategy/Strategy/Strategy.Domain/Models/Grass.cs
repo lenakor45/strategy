@@ -6,7 +6,7 @@
     public sealed class Grass :Ground
     {
         /// <inheritdoc />
-        public Grass()
+        public Grass(string name = "Grass") :base( name)
         {
         }
 

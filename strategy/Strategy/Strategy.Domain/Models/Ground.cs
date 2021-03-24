@@ -6,21 +6,12 @@ using System.Threading.Tasks;
 
 namespace Strategy.Domain.Models
 {
-    public class Ground
+    abstract public class Ground : MapElement
     {
-        public Ground()
+        public Ground(string name)
         {
-
+            Name = name;
         }
-        /// <summary>
-        /// Координата x
-        /// </summary>
-        public int X { get; set; }
-
-        /// <summary>
-        /// Координата y
-        /// </summary>
-        public int Y { get; set; }
-
+      
     }
 }

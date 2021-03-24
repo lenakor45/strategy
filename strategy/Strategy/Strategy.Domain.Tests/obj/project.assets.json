@@ -188,20 +188,20 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\chern\\.nuget\\packages\\": {}
+    "C:\\Users\\Леночка\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\ОГУ\\ООЯ и С\\Git\\strategy\\strategy\\Strategy\\Strategy.Domain.Tests\\Strategy.Domain.Tests.csproj",
+      "projectUniqueName": "C:\\Users\\Леночка\\Desktop\\Git\\Git\\strategy\\strategy\\Strategy\\Strategy.Domain.Tests\\Strategy.Domain.Tests.csproj",
       "projectName": "Strategy.Domain.Tests",
-      "projectPath": "E:\\ОГУ\\ООЯ и С\\Git\\strategy\\strategy\\Strategy\\Strategy.Domain.Tests\\Strategy.Domain.Tests.csproj",
-      "packagesPath": "C:\\Users\\chern\\.nuget\\packages\\",
-      "outputPath": "E:\\ОГУ\\ООЯ и С\\Git\\strategy\\strategy\\Strategy\\Strategy.Domain.Tests\\obj\\",
+      "projectPath": "C:\\Users\\Леночка\\Desktop\\Git\\Git\\strategy\\strategy\\Strategy\\Strategy.Domain.Tests\\Strategy.Domain.Tests.csproj",
+      "packagesPath": "C:\\Users\\Леночка\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Леночка\\Desktop\\Git\\Git\\strategy\\strategy\\Strategy\\Strategy.Domain.Tests\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
-        "C:\\Users\\chern\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Леночка\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -214,8 +214,8 @@
       "frameworks": {
         "net461": {
           "projectReferences": {
-            "E:\\ОГУ\\ООЯ и С\\Git\\strategy\\strategy\\Strategy\\Strategy.Domain\\Strategy.Domain.csproj": {
-              "projectPath": "E:\\ОГУ\\ООЯ и С\\Git\\strategy\\strategy\\Strategy\\Strategy.Domain\\Strategy.Domain.csproj"
+            "C:\\Users\\Леночка\\Desktop\\Git\\Git\\strategy\\strategy\\Strategy\\Strategy.Domain\\Strategy.Domain.csproj": {
+              "projectPath": "C:\\Users\\Леночка\\Desktop\\Git\\Git\\strategy\\strategy\\Strategy\\Strategy.Domain\\Strategy.Domain.csproj"
             }
           }
         }

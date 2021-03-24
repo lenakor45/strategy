@@ -21,3 +21,21 @@ E:\ОГУ\ООЯ и С\Git\strategy\strategy\Strategy\Strategy.Domain\obj\Debug\
 E:\ОГУ\ООЯ и С\Git\strategy\strategy\Strategy\Strategy.Domain\obj\Debug\Strategy.Domain.pdb
 E:\ОГУ\ООЯ и С\Git\strategy\strategy\Strategy\Strategy.Domain\bin\Debug\Strategy.Domain.dll
 E:\ОГУ\ООЯ и С\Git\strategy\strategy\Strategy\Strategy.Domain\bin\Debug\Strategy.Domain.pdb
+C:\Users\Леночка\Downloads\Git\Git\strategy\strategy\Strategy\Strategy.Domain\obj\Debug\Strategy.Domain.csprojAssemblyReference.cache
+C:\Users\Леночка\Downloads\Git\Git\strategy\strategy\Strategy\Strategy.Domain\obj\Debug\Strategy.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Леночка\Downloads\Git\Git\strategy\strategy\Strategy\Strategy.Domain\obj\Debug\Strategy.Domain.dll
+C:\Users\Леночка\Downloads\Git\Git\strategy\strategy\Strategy\Strategy.Domain\obj\Debug\Strategy.Domain.pdb
+C:\Users\Леночка\Downloads\Git\Git\strategy\strategy\Strategy\Strategy.Domain\bin\Debug\Strategy.Domain.dll
+C:\Users\Леночка\Downloads\Git\Git\strategy\strategy\Strategy\Strategy.Domain\bin\Debug\Strategy.Domain.pdb
+C:\Users\chern\OneDrive\Рабочий стол\Git\Git\strategy\strategy\Strategy\Strategy.Domain\bin\Debug\Strategy.Domain.dll
+C:\Users\chern\OneDrive\Рабочий стол\Git\Git\strategy\strategy\Strategy\Strategy.Domain\bin\Debug\Strategy.Domain.pdb
+C:\Users\chern\OneDrive\Рабочий стол\Git\Git\strategy\strategy\Strategy\Strategy.Domain\obj\Debug\Strategy.Domain.csprojAssemblyReference.cache
+C:\Users\chern\OneDrive\Рабочий стол\Git\Git\strategy\strategy\Strategy\Strategy.Domain\obj\Debug\Strategy.Domain.csproj.CoreCompileInputs.cache
+C:\Users\chern\OneDrive\Рабочий стол\Git\Git\strategy\strategy\Strategy\Strategy.Domain\obj\Debug\Strategy.Domain.dll
+C:\Users\chern\OneDrive\Рабочий стол\Git\Git\strategy\strategy\Strategy\Strategy.Domain\obj\Debug\Strategy.Domain.pdb
+C:\Users\Леночка\Desktop\Git\Git\strategy\strategy\Strategy\Strategy.Domain\bin\Debug\Strategy.Domain.dll
+C:\Users\Леночка\Desktop\Git\Git\strategy\strategy\Strategy\Strategy.Domain\bin\Debug\Strategy.Domain.pdb
+C:\Users\Леночка\Desktop\Git\Git\strategy\strategy\Strategy\Strategy.Domain\obj\Debug\Strategy.Domain.csprojAssemblyReference.cache
+C:\Users\Леночка\Desktop\Git\Git\strategy\strategy\Strategy\Strategy.Domain\obj\Debug\Strategy.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Леночка\Desktop\Git\Git\strategy\strategy\Strategy\Strategy.Domain\obj\Debug\Strategy.Domain.dll
+C:\Users\Леночка\Desktop\Git\Git\strategy\strategy\Strategy\Strategy.Domain\obj\Debug\Strategy.Domain.pdb
